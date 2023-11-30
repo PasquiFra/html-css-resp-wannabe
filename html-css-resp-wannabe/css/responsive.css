@@ -1,0 +1,121 @@
+/*! ------------ CSS PROPERTIES ------------*/
+:root {
+    --resp-space-xs:calc(0.05rem + 2vw);
+    --resp-space-s: calc(0.1rem + 2vw);
+    --resp-space-m: calc(0.3rem + 2vw);
+    --resp-space-m-1: calc(0.4rem + 2.5vw);
+    --resp-space-ml: calc(0.5rem + 3vw);
+    --resp-space-ml-1: calc(0.6rem + 3.5vw);
+    --resp-space-l: calc(0.7rem + 3vw);
+    --resp-space-xl: calc(0.8rem + 4vw);
+    --resp-space-xxl: calc(1rem + 4vw);
+    --resp-space-xxxl: calc(1.2rem + 5vw);
+}
+
+@media screen and (max-width: 768px) {
+ 
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    /*! TESTO RESPONSIVE */
+    h1 {
+        font-size: var(--resp-space-xl);
+        margin-bottom: var(--resp-space-xl);  
+    }
+    h2 {
+        font-size: var(--resp-space-ml);   
+        margin-bottom: var(--resp-space-ml); 
+    }
+    h3 {
+        font-size: var(--resp-space-m);    
+    }
+    p {
+        font-size: var(--resp-space-s);    
+    }
+
+    /* ALTRE SPAZIATURE RESPONSIVE */
+    .site-header {
+        margin-top: var(--resp-space-xl);
+    }
+
+    .steps {
+        margin: var(--resp-space-xl) 0;
+        padding: var(--resp-space-xl) 0;
+    }
+    .steps .col img {
+        height: calc(150px + 0.2rem);
+        margin-bottom: var(--resp-space-m);
+    }
+
+    .col {
+        padding-left:  var(--resp-space-m);
+        padding-right:  var(--resp-space-m);
+    }
+
+    .why-us {
+        margin-bottom:  var(--resp-space-xl);
+    }
+
+    .why-us li {
+        margin-bottom: var(--resp-space-l);
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .container {
+        width: 80%;
+    }
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row .col {
+        width: 100%;
+    }
+    .lessons .col img,
+    .steps .col img {
+        height: 250px;
+        padding-top: var(--resp-space-ml);
+    }
+    section.lessons,
+    section.steps,
+    section.why-us
+    {
+        margin: 0;
+        margin-bottom: 0;
+        padding: 3rem 0 0 0;
+    }
+
+
+    /*! TESTO RESPONSIVE */
+    header.site-header h1 {
+        font-size: var(--resp-space-xxxl);
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: var(--resp-space-xxl);   
+        margin-bottom: var(--resp-space-xxl); 
+    }
+    h3 {
+        font-size: var(--resp-space-l);    
+    }
+    p {
+        font-size: var(--resp-space-m-1);    
+    }
+    .text {
+        padding-bottom: 3rem;
+    }
+
+    /* sezione WHY-US */
+    
+    section.why-us {
+        background-color: rgb(37, 37, 37);
+    }
+    section.why-us .col-right {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+}
