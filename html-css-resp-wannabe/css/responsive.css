@@ -12,10 +12,20 @@
     --resp-space-xxxl: calc(1.2rem + 5vw);
 }
 
+.container {
+    max-width: 1140px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    flex-basis: 100%;
+}
+
 @media screen and (max-width: 768px) {
  
     .container {
-        width: 100%;
         padding: 0;
     }
 
@@ -120,17 +130,5 @@
     section.why-us .col-right {
         padding-top: 4rem;
         padding-bottom: 3rem;
-    }
-}
-
-@media screen and (max-width: 1160px) {
-
-    .container {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    h2 {
-        flex-basis: 100%;
     }
 }
